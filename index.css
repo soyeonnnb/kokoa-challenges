@@ -1,0 +1,34 @@
+body {
+  background-color: tomato;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: wheat;
+  border: 2px solid black;
+  display: block;
+  justify-content: center;
+
+  height: 185px;
+  width: 185px;
+  padding: 20px;
+}
+.box__small {
+  background-color: teal;
+  border: 2px solid white;
+  width: 45px;
+  height: 45px;
+  margin-left: 65px;
+}
+.box__long {
+  background-color: teal;
+  border: 2px dashed white;
+  width: 170px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
