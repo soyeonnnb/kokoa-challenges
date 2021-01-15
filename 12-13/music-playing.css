@@ -1,0 +1,45 @@
+.play-image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 280px;
+  height: 280px;
+  border-radius: 25px;
+  box-shadow: 0px 25px 25px rgba(80, 80, 80, 0.5);
+}
+.play-title {
+  margin-bottom: 15px;
+}
+.play-time {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.play-time span {
+  color: var(--gray);
+  font-size: 13px;
+}
+input[type="range"] {
+  width: 300px;
+}
+
+.play-btns {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+.play-btns :first-child,
+.play-btns :last-child {
+  color: var(--gray);
+}
+.play-btns i:active {
+  color: rgba(80, 80, 80, 0.5);
+}
+.play-timebar {
+  margin-top: 70px;
+}
+.play-range {
+  margin-top: 10px;
+  height: 5px;
+}

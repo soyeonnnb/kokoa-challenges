@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="music-select.css" />
+    <link rel="stylesheet" href="music-playing.css" />
+  </head>
+  <body>
+    <div class="main-body" id="music-select">
+      <div class="header">
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+      <div class="singer">
+        <img class="singer__photo" src="blackpink.jpg"/ >
+        <h2 class="singer__name">BLACKPINK</h2>
+        <h3 class="singer__genre">Rap/Hip-Hop, Dance</h3>
+      </div>
+      <div class="btns">
+        <div class="btns__shuffle">Shuffle</div>
+        <div class="heart">
+          <i class="fas fa-heart"></i>
+          <div class="heart__rate">191 770</div>
+        </div>
+      </div>
+      <div class="best-songs"><span>Best Songs</span></div>
+      <div class="musics">
+        <div class="music">
+          <img src="your-last.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">마지막처럼</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="ddu-du.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">뚜두뚜두</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="love-sick.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">Lovesick Girls</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="love-sick.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">Pretty Savage</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="ddu-du.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">Forever Young</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="kill-this-love.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">Kill This Love</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+
+        <div class="music">
+          <img src="square one.jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">휘파람</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="music">
+          <img src="square two.jpg".jpg" class="music__jacket" />
+          <div class="music__title">
+            <div class="music__title-singer">BLACKPINK</div>
+            <div class="music__title-name">STAY</div>
+          </div>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+      </div>
+      <div class="now-playing">
+        <div class="now-playing__title">
+          <span class="now-playing__title-singer">BLACKPINK</span>
+          <span class="now-playing__title-name">Lovesick Girls</span>
+        </div>
+        <div class="now-playing__btns">
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-grip-lines-vertical fa-lg"></i>
+          <i class="fas fa-step-forward"></i>
+        </div>
+      </div>
+    </div>
+    <div class="main-body" id="music-playing">
+      <div class="header">
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+      </div>
+      <img class="play-image" src="love-sick.jpg" />
+      <h2 class="play-title">Lovesick Girls</h2>
+      <h3>BLACKPINK</h3>
+      <div class="play-timebar">
+        <div class="play-time">
+          <span>1:50</span>
+          <span>3:13</span>
+        </div>
+        <input type="range" class="play-range" />
+      </div>
+
+      <div class="play-btns">
+        <i class="fas fa-retweet fa-lg"></i>
+        <i class="fas fa-step-backward fa-lg"></i>
+        <i class="fas fa-play-circle fa-3x"></i>
+        <i class="fas fa-step-forward fa-lg"></i>
+        <i class="fas fa-random fa-lg"></i>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/38082222d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
