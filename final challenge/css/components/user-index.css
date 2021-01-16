@@ -1,0 +1,42 @@
+.user-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--margin-top) var(--margin-horizon) 20px var(--margin-horizon);
+}
+.user-index__photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.user-index__music {
+  display: flex;
+  justify-content: flex-end;
+}
+.user-index__column {
+  display: flex;
+  align-items: center;
+}
+.user-index__photo--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+.user-index__name {
+  font-size: 25px;
+  font-weight: 600;
+}
+.user-index__name--sm {
+  font-size: 20px;
+}
+.user-index__texts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50px;
+}
+.user-index__text {
+  color: teal;
+}

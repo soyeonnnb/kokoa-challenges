@@ -1,0 +1,25 @@
+.friends-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px var(--margin-horizon);
+}
+.friends-channel {
+  padding-top: 20px;
+  border-top: 1px solid rgb(163, 163, 163);
+  margin-right: var(--margin-horizon);
+  margin-left: var(--margin-horizon);
+  display: flex;
+  justify-content: space-between;
+}
+.user-index__music {
+  height: 35px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.user-index__music i {
+  margin-left: 10px;
+}
