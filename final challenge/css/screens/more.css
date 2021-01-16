@@ -1,0 +1,38 @@
+.user-index-mybtn {
+  padding: 10px 20px;
+  background-color: burlywood;
+  border-radius: 20px;
+}
+.user-index-mybtn span {
+  font-size: 18px;
+}
+.advertise {
+  margin: 0 var(--margin-horizon);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.advertise img {
+  width: 470px;
+  height: 260px;
+  border-radius: 8px;
+}
+.advertise span {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: burlywood;
+  border-radius: 10px;
+  font-size: 15px;
+  right: 5px;
+  top: 7px;
+}
+.weather {
+  margin: 25px var(--margin-horizon);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.weather__condition {
+  display: flex;
+  align-items: center;
+}

@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: var(--margin-top) var(--margin-horizon) 20px var(--margin-horizon);
+  margin: 0px var(--margin-horizon) 20px var(--margin-horizon);
+}
+.user-index-first {
+  margin-top: var(--margin-top);
 }
 .user-index__photo {
   width: 80px;
@@ -24,6 +27,12 @@
   border-radius: 25px;
   margin-right: 20px;
 }
+.user-index__photo--lg {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
 .user-index__name {
   font-size: 25px;
   font-weight: 600;
@@ -39,4 +48,19 @@
 }
 .user-index__text {
   color: teal;
+}
+
+.user-index__texts-name {
+  display: flex;
+  align-items: center;
+}
+.user-index__texts-name i {
+  margin-top: 5px;
+  color: gray;
+}
+.user-index__photo--xs {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
 }

@@ -1,0 +1,81 @@
+.find-screen {
+  margin: var(--margin-top) var(--margin-horizon) 5px var(--margin-horizon);
+}
+.recommended,
+.open-chat {
+  border-top: 1px solid gray;
+  margin-left: var(--margin-horizon);
+  margin-right: var(--margin-horizon);
+}
+.recommended__header,
+.open-chat__header {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  align-items: center;
+}
+
+.recommended-icon {
+  padding: 6px 9px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 3px;
+}
+.open-chat__main {
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat__main-column img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-chat__main-author > img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-chat__main-author {
+  display: flex;
+  align-items: center;
+}
+.open-chat__main div:first-child {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.divider {
+  width: 2px;
+  height: 15px;
+  background-color: black;
+  margin: 0px 5px;
+}
+
+.open-chat__main-column h5 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.open-chat__main-column h6 {
+  color: brown;
+}
+.open-chat__main-author :last-child {
+  color: blueviolet;
+}
+.open-chat__main-column {
+  position: relative;
+}
+.open-chat__main-heart {
+  position: absolute;
+  background-color: burlywood;
+  padding: 6px 12px;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 8px;
+}
