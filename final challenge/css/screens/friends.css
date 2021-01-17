@@ -1,8 +1,16 @@
+.color-red {
+  background-color: rgb(255, 230, 230);
+}
 .friends-index {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 15px var(--margin-horizon);
+  margin: 10px var(--margin-horizon);
+  padding: 5px;
+  border-radius: 15px;
+}
+.friends-index:hover {
+  background-color: var(--main-hover-color);
 }
 .friends-channel {
   padding-top: 20px;
@@ -11,15 +19,9 @@
   margin-left: var(--margin-horizon);
   display: flex;
   justify-content: space-between;
+  color: var(--gray);
 }
-.user-index__music {
-  height: 35px;
-  border-radius: 20px;
-  border: 1.5px solid black;
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-}
+
 .user-index__music i {
   margin-left: 10px;
 }

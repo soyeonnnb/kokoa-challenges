@@ -1,0 +1,62 @@
+.color-pink {
+  background-color: rgb(251, 228, 255);
+}
+.settings-screen {
+  margin: var(--margin-top) 0 75px 0;
+  color: var(--gray);
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin: 5px var(--margin-horizon);
+}
+.settings-first {
+  margin-top: 100px;
+}
+.main-screen {
+  padding-bottom: 70px;
+}
+.setting-object {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 6px;
+  margin: 5px 0px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.setting-object:hover {
+  background-color: var(--main-hover-color);
+}
+.setting-object:active {
+  background-color: rgba(255, 255, 255, 0.822);
+  color: rgb(46, 46, 46);
+}
+
+.setting-object i {
+  font-size: 25px;
+  width: 60px;
+}
+
+.setting-object__new span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+  padding: 6px 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.setting-object__column {
+  display: flex;
+  align-items: center;
+}
+.divider-hori {
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(163, 163, 163);
+  margin: 25px 0px;
+}

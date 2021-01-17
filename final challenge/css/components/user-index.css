@@ -3,6 +3,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 0px var(--margin-horizon) 20px var(--margin-horizon);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.user-index:hover {
+  background-color: var(--main-hover-color);
 }
 .user-index-first {
   margin-top: var(--margin-top);
@@ -16,6 +22,12 @@
 .user-index__music {
   display: flex;
   justify-content: flex-end;
+  color: rgb(235, 160, 160);
+  height: 35px;
+  border-radius: 20px;
+  border: 1.5px solid rgb(235, 160, 160);
+  padding: 5px 10px;
+  align-items: center;
 }
 .user-index__column {
   display: flex;
@@ -35,10 +47,12 @@
 }
 .user-index__name {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--gray);
 }
 .user-index__name--sm {
   font-size: 20px;
+  color: var(--gray);
 }
 .user-index__texts {
   display: flex;
@@ -47,7 +61,7 @@
   height: 50px;
 }
 .user-index__text {
-  color: teal;
+  color: var(--gray);
 }
 
 .user-index__texts-name {
@@ -56,11 +70,11 @@
 }
 .user-index__texts-name i {
   margin-top: 5px;
-  color: gray;
+  color: rgb(106, 127, 207);
 }
 .user-index__photo--xs {
   width: 50px;
   height: 50px;
   border-radius: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }

@@ -1,9 +1,12 @@
+.color-green {
+  background-color: rgb(217, 255, 223);
+}
 .find-screen {
-  margin: var(--margin-top) var(--margin-horizon) 5px var(--margin-horizon);
+  margin: var(--margin-top) 0 80px 0;
 }
 .recommended,
 .open-chat {
-  border-top: 1px solid gray;
+  border-top: var(--main-border-top);
   margin-left: var(--margin-horizon);
   margin-right: var(--margin-horizon);
 }
@@ -15,19 +18,35 @@
   justify-content: space-between;
   color: gray;
   align-items: center;
+  cursor: default;
 }
-
+.open-chat__header-goto:hover,
+.recommended__header-goto:hover {
+  cursor: pointer;
+}
 .recommended-icon {
   padding: 6px 9px;
-  background-color: rgb(212, 212, 212);
+  background-color: rgba(207, 207, 207, 0.438);
   border-radius: 3px;
 }
+.recommended-icon:active {
+  color: whitesmoke;
+  background-color: rgba(116, 116, 116, 0.486);
+}
+.recommended-icon:hover {
+  cursor: pointer;
+}
 .open-chat__main {
-  padding: 10px 0px;
-  border-bottom: 1px solid black;
+  padding: 10px 6px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.493);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 8px;
+}
+.open-chat__main:hover {
+  background-color: var(--main-hover-color);
+  cursor: pointer;
 }
 
 .open-chat__main-column img {
@@ -51,7 +70,7 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.divider {
+.divider-vert {
   width: 2px;
   height: 15px;
   background-color: black;
@@ -60,22 +79,28 @@
 
 .open-chat__main-column h5 {
   font-size: 20px;
+  font-weight: 500;
   margin-bottom: 4px;
 }
 .open-chat__main-column h6 {
-  color: brown;
+  color: var(--gray);
 }
 .open-chat__main-author :last-child {
-  color: blueviolet;
+  color: rgb(236, 44, 204);
 }
 .open-chat__main-column {
   position: relative;
 }
 .open-chat__main-heart {
   position: absolute;
-  background-color: burlywood;
-  padding: 6px 12px;
+  background-color: rgba(71, 71, 71, 0.699);
+  padding: 6px 8px;
   border-radius: 20px;
   bottom: 10px;
   right: 8px;
+  color: whitesmoke;
+  font-size: 13px;
+}
+.open-chat__main-heart i {
+  margin-right: 4px;
 }

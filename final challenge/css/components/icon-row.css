@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--gray);
 }
 
 .icon-row__icon {
@@ -9,9 +10,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100px;
   height: 100px;
-  margin: 10px 10px;
+  width: 90px;
+  margin: 10px 8px;
+  padding-top: 10px;
+
+  border-radius: 10px;
+}
+.icon-row__icon:hover {
+  background-color: var(--main-hover-color);
+}
+.icon-row__icon:active {
+  background-color: rgba(255, 255, 255, 0.822);
+  color: rgb(46, 46, 46);
 }
 .icon-row__icon-name {
   height: 150px;

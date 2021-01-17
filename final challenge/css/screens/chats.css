@@ -1,3 +1,6 @@
+.color-blue {
+  background-color: rgb(212, 221, 255);
+}
 .chats-sth__time {
   color: gray;
 }
@@ -11,11 +14,12 @@
 .chats-sth__new {
   position: absolute;
   padding: 5px 8px;
-  background-color: green;
+  background-color: rgb(106, 127, 207);
   border-radius: 50%;
   left: 40px;
   top: 25px;
   color: white;
+  font-weight: 500;
 }
 .chats-member-num {
   color: gray;
