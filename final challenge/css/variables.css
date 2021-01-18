@@ -1,6 +1,7 @@
 :root {
   --margin-horizon: 18px;
   --margin-top: 120px;
+  --padding-bottom: 70px;
   --gray: rgb(82, 82, 82);
   --main-hover-color: rgba(255, 255, 255, 0.6);
   --main-border-top: 1px solid rgb(163, 163, 163);

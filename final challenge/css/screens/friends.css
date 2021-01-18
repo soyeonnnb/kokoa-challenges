@@ -21,7 +21,39 @@
   justify-content: space-between;
   color: var(--gray);
 }
-
 .user-index__music i {
   margin-left: 10px;
+}
+.fa-chevron-up {
+  transition: transform 1s ease-in-out;
+}
+.fa-chevron-up:hover {
+  transform: rotate(90deg);
+}
+.friends-screen {
+  padding-bottom: var(--padding-bottom);
+}
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 8, 119);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  font-size: 80px;
+  z-index: 30;
+  animation: splashHide 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+@keyframes splashHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

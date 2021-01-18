@@ -29,7 +29,10 @@
         <i class="fas fa-search fa-lg"></i>
         <i class="fas fa-qrcode fa-lg"></i>
         <i class="fas fa-music fa-lg"></i>
-        <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+        <div class="screen-header__icons-setting">
+          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+          <div class="screen-header__icons-dot"></div>
+        </div>
       </div>
     </div>
     <main class="more-screen">
@@ -148,7 +151,8 @@
         <li class="nav-bar__btn">
           <a class="nav-bar__link" href="chats.html"
             ><i class="far fa-comment fa-2x"></i
-          ></a>
+            ><span class="nav__notification">1</span></a
+          >
         </li>
         <li class="nav-bar__btn">
           <a class="nav-bar__link" href="find.html"
@@ -164,6 +168,9 @@
     </nav>
     <div class="background">
       <img class="background__photo" src="photos/back/yellow.jpg" />
+    </div>
+    <div id="no-mobile">
+      <span>Please reduce the size of the screen size.</span>
     </div>
     <script
       src="https://kit.fontawesome.com/38082222d0.js"

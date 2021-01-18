@@ -19,10 +19,11 @@
 }
 .icon-row__icon:hover {
   background-color: var(--main-hover-color);
+  animation: scale-up 1s ease-in-out forwards;
+  color: rgb(46, 46, 46);
 }
 .icon-row__icon:active {
   background-color: rgba(255, 255, 255, 0.822);
-  color: rgb(46, 46, 46);
 }
 .icon-row__icon-name {
   height: 150px;
@@ -35,4 +36,12 @@
 }
 .icon-row i {
   font-size: 40px;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }

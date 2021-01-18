@@ -1,6 +1,9 @@
 .color-yellow {
   background-color: rgb(255, 252, 223);
 }
+.more-screen {
+  padding-bottom: var(--padding-bottom);
+}
 .user-index-mybtn {
   padding: 10px 20px;
   background-color: rgb(250, 238, 152);
@@ -13,7 +16,7 @@
   background-color: rgb(251, 228, 255);
 }
 .advertise {
-  margin: 0 var(--margin-horizon);
+  margin: 10px var(--margin-horizon);
   display: flex;
   justify-content: center;
 }
@@ -59,7 +62,7 @@
   justify-content: space-between;
   font-size: 15px;
 }
-. .weather__condition-time i {
+.weather__condition-time i {
   margin-right: 5px;
 }
 .weather__body {

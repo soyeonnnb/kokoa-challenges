@@ -1,28 +1,35 @@
 .color-skyblue {
   background-color: rgb(217, 252, 248);
 }
-.chat-screen {
-  margin-top: var(--margin-top);
+.chating-screen {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 70px;
 }
+
 .chat-day {
   display: flex;
   background-color: rgba(0, 0, 0, 0.4);
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 220px;
   height: 40px;
   color: aliceblue;
   font-weight: 500;
   border-radius: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  animation: fadeTop 0.8s ease-in-out both;
+  animation-delay: 1.6s;
 }
 .chat-with {
   width: 100vw;
-  margin-left: 30px;
+  margin-left: 20px;
   display: flex;
+  margin-top: 15px;
+  animation: fadeLeft 0.8s ease-in-out forwards;
 }
 .chat-with__body {
   display: flex;
@@ -51,6 +58,8 @@
   justify-content: flex-end;
   width: 100vw;
   margin-right: 30px;
+  animation: fadeRight 0.8s ease-in-out both;
+  animation-delay: 0.8s;
 }
 .chat-me__content {
   padding: 10px 13px;
@@ -61,70 +70,113 @@
   border-top-right-radius: 0;
   color: white;
 }
-.chat-input {
-  display: flex;
+.reply {
   position: fixed;
   bottom: 0;
-  height: 60px;
-  background-color: cadetblue;
-  width: 100vw;
-  align-items: center;
-}
-.chat-input input:focus {
-  outline: none;
-}
-.chat-input > i {
+  width: 100%;
+  background-color: rgb(130, 194, 194);
   display: flex;
-  justify-content: center;
-  width: 10%;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.reply .reply__column:first-child {
+  width: 5%;
+  position: relative;
+}
+.reply .reply__column:first-child i {
+  position: absolute;
+  top: -16px;
+  left: -14px;
   color: white;
 }
-.chat-input > i:hover {
-  color: rgb(145, 145, 145);
-}
-.chat-input > i:active {
-  color: var(--gray);
-}
-.chat-input i {
-  cursor: pointer;
-}
-.chat-input__bars {
-  display: flex;
-  justify-content: flex-start;
-  width: 90%;
-  position: relative;
-  align-items: center;
-}
-.chat-input input {
+.reply .reply__column:last-child {
   width: 95%;
-  height: 45px;
-  padding: 15px;
-  font-size: 20px;
+  position: relative;
+}
+.reply input {
+  padding: 12px;
+  margin-right: 2px;
+  width: 100%;
+  border: var(--main-border);
   border-radius: 20px;
-  border: none;
+  transition: all 0.3s ease-in-out;
 }
-.chat-input__bars-icons {
-  display: flex;
-  justify-content: center;
+.reply__column:last-child > i,
+.reply__column:last-child button {
   position: absolute;
-  right: 6%;
-  align-items: center;
+  right: 10px;
+  top: 5px;
 }
-.chat-input__bars-icons i {
-  font-size: 25px;
-  color: var(--gray);
+.reply__column:last-child i {
+  right: 50px;
+  top: 13px;
 }
-.fa-arrow-up {
-  margin-left: 20px;
-  padding: 10px 8px;
-  background-color: rgb(255, 253, 106);
+.reply__column button {
+  background-color: rgb(138, 202, 195);
+  border: none;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
-.fa-arrow-up:hover {
-  background-color: rgba(255, 127, 80, 0.753);
-  color: white;
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
 }
-.fa-arrow-up:active {
-  background-color: coral;
-  color: white;
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
+}
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply input:focus {
+  width: 95vw;
+  transform: translateX(-7%) translateY(-80px);
+  outline: none;
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

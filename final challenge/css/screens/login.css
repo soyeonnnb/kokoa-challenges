@@ -12,6 +12,7 @@
 }
 .login-info__title {
   font-size: 30px;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .login-info__sub {
   margin-top: 30px;
@@ -19,6 +20,8 @@
   font-weight: 300;
   color: gray;
   text-align: center;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 0.7s;
 }
 
 .welcome-login {
@@ -52,6 +55,7 @@
 .welcome-login__btn:hover {
   background-color: rgba(255, 255, 255, 0.8);
   outline: none;
+  cursor: pointer;
 }
 
 .welcome-login__find {
@@ -63,4 +67,19 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+}
+.welcome-login__find:hover {
+  color: lightcoral;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }

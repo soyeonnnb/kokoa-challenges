@@ -7,12 +7,11 @@
 .chats-sth {
   display: flex;
   flex-direction: column;
-  height: 40px;
+  height: 50px;
   justify-content: space-between;
-  position: relative;
+  align-items: flex-end;
 }
 .chats-sth__new {
-  position: absolute;
   padding: 5px 8px;
   background-color: rgb(106, 127, 207);
   border-radius: 50%;
@@ -20,6 +19,7 @@
   top: 25px;
   color: white;
   font-weight: 500;
+  animation: vibrate 0.3s linear infinite both;
 }
 .chats-member-num {
   color: gray;
@@ -30,4 +30,27 @@
 }
 .fa-thumbtack {
   margin-left: 8px;
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.chats-screen {
+  padding-bottom: var(--padding-bottom);
 }
